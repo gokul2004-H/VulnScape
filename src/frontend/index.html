@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnSape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>VulnSape</h1>
+    <form id="scanForm">
+        <label for="url">Enter Target URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Start Scan</button>
+    </form>
+    <h2>Scan Status</h2>
+    <p id="status">Waiting for scan...</p>
+    <pre id="results"></pre>
+
+    <script src="app.js"></script>
+</body>
+<footer>
+    <p>© 2025 CyberCore. All rights reserved.</p>
+</footer>
+
+</html>

@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+/* Table Wrapper to Enable Scroll on Small Screens */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Allows scrolling on smaller screens */
+}
+
+/* Results Table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto; /* Adjusts columns dynamically */
+}
+
+/* Table Headers */
+.results-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.results-table th, .results-table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    word-break: break-word; /* Ensures content wraps properly */
+    white-space: normal;
+}
+
+/* Table Rows */
+.results-table tbody tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+/* Risk Level Styling */
+.high-risk {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+}
+
+.medium-risk {
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+
+.low-risk {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.informational {
+    background-color: #17a2b8;
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Cell Wrapping */
+.results-table td {
+    max-width: 300px; /* Limits width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive Scroll for Large Tables */
+@media (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: scroll;
+    }
+}
+
+/* Back Button */
+.back-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn a:hover {
+    background: #0056b3;
+}
